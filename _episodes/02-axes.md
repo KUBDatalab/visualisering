@@ -38,49 +38,7 @@ Her taler vi om akser, og deres betydning for visualiseringer
 skalering er ret vigtig. Nedenstående tre plots har nøjagtigt samme data. Hvordan 
 ser hældningerne ud på dem?
 
-
-~~~
-library(cowplot)
-p <- ggplot(data = data.frame(x=0), mapping = aes(x = x) ) +
-  stat_function(fun = function(x) sin(x)) +
-  xlim(-5,5)
-~~~
-{: .language-r}
-
-
-
-~~~
-Error in ggplot(data = data.frame(x = 0), mapping = aes(x = x)): could not find function "ggplot"
-~~~
-{: .error}
-
-
-
-~~~
-top <- plot_grid(p,p, rel_widths=c(1,3))
-~~~
-{: .language-r}
-
-
-
-~~~
-Error in plot_grid(p, p, rel_widths = c(1, 3)): object 'p' not found
-~~~
-{: .error}
-
-
-
-~~~
-plot_grid(top, p, ncol=1, rel_heights = c(2,1))
-~~~
-{: .language-r}
-
-
-
-~~~
-Error in plot_grid(top, p, ncol = 1, rel_heights = c(2, 1)): object 'top' not found
-~~~
-{: .error}
+<img src="../fig/rmd-02-unnamed-chunk-2-1.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" width="612" style="display: block; margin: auto;" />
 
 ## Truncation of axes ## 
 
