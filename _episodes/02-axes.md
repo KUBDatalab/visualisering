@@ -42,13 +42,7 @@ ser hældningerne ud på dem?
 
 ## Truncation of axes ## 
 
-<figure>
-<img src="../fig/here_horst.png" title="Monsters at a fork in the road, with signs saying here, and not here. One direction, not here, leads to a scary dark forest with spiders and absolute filepaths, while the other leads to a sunny, green meadow, and a city below a rainbow and a world free of absolute filepaths. Art by Allison Horst" alt="Monsters at a fork in the road, with signs saying here, and not here. One direction, not here, leads to a scary dark forest with spiders and absolute filepaths, while the other leads to a sunny, green meadow, and a city below a rainbow and a world free of absolute filepaths. Art by Allison Horst" width="100%" style="display: block; margin: auto;" />
 
-<figcaption>
-Image credit: <a href="https://github.com/allisonhorst/stats-illustrations">Allison Horst</a>
-</figcaption>
-</figure>
 
 Nedenstående import af data beholder vi lidt endnu - piller vi ved den
 crasher efterfølgende siders kode, og det må godt vente et par iterationer
@@ -131,6 +125,39 @@ der er ryddet op i andre sider.
 
 
 ~~~
+library(lubridate)
+~~~
+{: .language-r}
+
+
+
+~~~
+
+Attaching package: 'lubridate'
+~~~
+{: .output}
+
+
+
+~~~
+The following object is masked from 'package:cowplot':
+
+    stamp
+~~~
+{: .output}
+
+
+
+~~~
+The following objects are masked from 'package:base':
+
+    date, intersect, setdiff, union
+~~~
+{: .output}
+
+
+
+~~~
 interviews$day <- day(dates)
 ~~~
 {: .language-r}
@@ -138,7 +165,7 @@ interviews$day <- day(dates)
 
 
 ~~~
-Error in day(dates): could not find function "day"
+Error in day(dates): object 'dates' not found
 ~~~
 {: .error}
 
@@ -152,7 +179,7 @@ interviews$month <- month(dates)
 
 
 ~~~
-Error in month(dates): could not find function "month"
+Error in month(dates): object 'dates' not found
 ~~~
 {: .error}
 
@@ -166,7 +193,7 @@ interviews$year <- year(dates)
 
 
 ~~~
-Error in year(dates): could not find function "year"
+Error in year(dates): object 'dates' not found
 ~~~
 {: .error}
 

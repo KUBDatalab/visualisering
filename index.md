@@ -3,18 +3,17 @@ layout: lesson
 root: .
 ---
 
-Data Carpentry’s aim is to teach researchers basic concepts, skills, 
-and tools for working with data so that they can get more done in 
-less time, and with less pain. The lessons below were designed for 
-those interested in working with social sciences data in R.
+The aim of Copenhagen University Datalab is to teach researchers, teachers and 
+students basic concepts, skills and tools for working with data so that they
+can get more done in less time, and with less pain.
 
-This is an introduction to R designed for participants with no 
-programming experience. These lessons can be taught in a day (~ 6 
-hours). They start with some basic information about R syntax, the 
-RStudio interface, and move through how to import CSV files, the 
-structure of data frames, how to deal with factors, how to add/remove
-rows and columns, how to calculate summary statistics from a data 
-frame, and a brief introduction to plotting.
+This is an introduction to visualising data. Instead of working with code, we
+take an abstract approach, and discuss the different tips tricks and pitfalls 
+when we make visualisations of our data.
+
+These pages are currently under heavy construction. The only webpages that are
+not under construction and continiuous change, are dead webpages, but these 
+pages are not yet ready for use.
 
 > ## Getting Started
 >
