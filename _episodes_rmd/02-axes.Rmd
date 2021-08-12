@@ -53,15 +53,7 @@ plot_grid(top, p, ncol=1, rel_heights = c(2,1))
 
 ## Truncation of axes ## 
 
-<figure>
-```{r here-figure, echo = FALSE, fig.show = "hold", fig.alt = "Monsters at a fork in the road, with signs saying here, and not here. One direction, not here, leads to a scary dark forest with spiders and absolute filepaths, while the other leads to a sunny, green meadow, and a city below a rainbow and a world free of absolute filepaths. Art by Allison Horst", out.width="100%"}
-knitr::include_graphics("../fig/here_horst.png")
-```
 
-<figcaption>
-Image credit: <a href="https://github.com/allisonhorst/stats-illustrations">Allison Horst</a>
-</figcaption>
-</figure>
 
 Nedenstående import af data beholder vi lidt endnu - piller vi ved den
 crasher efterfølgende siders kode, og det må godt vente et par iterationer
@@ -139,6 +131,7 @@ Her sker der vist et eller andet med data - det lader vi lige overleve til
 der er ryddet op i andre sider.
 
 ```{r, purl = FALSE}
+library(lubridate)
 interviews$day <- day(dates)
 interviews$month <- month(dates)
 interviews$year <- year(dates)
