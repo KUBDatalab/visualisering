@@ -40,7 +40,8 @@ Her taler vi om akser, og deres betydning for visualiseringer
 skalering er ret vigtig. Nedenstående tre plots har nøjagtigt samme data. Hvordan 
 ser hældningerne ud på dem?
 
-```{r purl = FALSE}
+```{r purl = FALSE, echo=FALSE, message=FALSE, warning = FALSE}
+library(tidyverse)
 library(cowplot)
 p <- ggplot(data = data.frame(x=0), mapping = aes(x = x) ) +
   stat_function(fun = function(x) sin(x)) +
