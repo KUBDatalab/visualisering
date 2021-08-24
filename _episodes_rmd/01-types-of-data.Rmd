@@ -39,41 +39,6 @@ formålet med visualilseringen?
 
 Herunder er der stadig en del kode og andet skrammel, der ikke er fjernet endnu.
 
-## Why are we visualising data? ##
-
-We visualise data for several purposes. They can be broken down to smaller 
-purposes, but the main categories are:
-
-Communicating information
-
-Discovering patterns
-
-In communication of information, we have a result, some information or 
-relationships between data that we want to present to an audience. The goal is
-to tell our audience about something.
-
-An earlier stage of the process is when we use visualisation of data, to discover 
-what is happening in our data. We visualise data to draw on the pattern 
-recognition our brain is equipped with.
-
-A classical example of the value of visualising data is the 
-[https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak](work done by John Snow)
-during an outbreak of cholera in London in 1854. Carefull collection of data on
-where people afflicted by cholera were living resulted in this map:
-
-Stacked rectangles places shows the clusters of cholera cases. Quite close to 
-the largest rectangles we find a water pump, at the intersection of Broad Street
-and Cambridge Street. That pump was the source of the outbreak, that killed 616 
-people. It was located less than 1 meter from a cesspit that was leaking.
-
-Visualising the number of cases made it relatively easy to identify the source 
-and close it down.
-
-
-![RStudio_startup](../fig/1024px-Snow-cholera-map-1.jpg)
-
-
-
 
 Vise andre sammenhænge og mønstre, så de kan forstå data. Der er både et 
 eksplorativt element, hvor vi bruger visualiseringer til at opdage mønstre
