@@ -1,5 +1,5 @@
 current directory: /home/runner/work/visualisering/visualisering/.vendor/bundle/ruby/2.7.0/gems/ffi-1.15.3/ext/ffi_c
-/opt/hostedtoolcache/Ruby/2.7.4/x64/bin/ruby -I /opt/hostedtoolcache/Ruby/2.7.4/x64/lib/ruby/2.7.0 -r ./siteconf20210812-11107-yc1jxs.rb extconf.rb
+/opt/hostedtoolcache/Ruby/2.7.4/x64/bin/ruby -I /opt/hostedtoolcache/Ruby/2.7.4/x64/lib/ruby/2.7.0 -r ./siteconf20210824-12877-1x1qydx.rb extconf.rb
 checking for ffi_prep_closure_loc() in -lffi... yes
 checking for ffi_prep_cif_var()... yes
 checking for ffi_raw_call()... yes
@@ -53,41 +53,41 @@ current directory: /home/runner/work/visualisering/visualisering/.vendor/bundle/
 make "DESTDIR="
 make[1]: Entering directory '/home/runner/work/visualisering/visualisering/.vendor/bundle/ruby/2.7.0/gems/ffi-1.15.3/ext/ffi_c'
 Makefile:175: warning: overriding recipe for target 'clean'
-êÿ≈Å≤U:175: warning: ignoring old recipe for target 'clean'
+ê∏E5‰U:175: warning: ignoring old recipe for target 'clean'
 Makefile:182: warning: overriding recipe for target 'distclean'
-êÿ≈Å≤U:182: warning: ignoring old recipe for target 'distclean'
+ê∏E5‰U:182: warning: ignoring old recipe for target 'distclean'
 Makefile:190: warning: overriding recipe for target 'install-so'
-êÿ≈Å≤U:190: warning: ignoring old recipe for target 'install-so'
+ê∏E5‰U:190: warning: ignoring old recipe for target 'install-so'
 Makefile:200: warning: overriding recipe for target 'pre-install-rb-default'
-êÿ≈Å≤U:200: warning: ignoring old recipe for target 'pre-install-rb-default'
+ê∏E5‰U:200: warning: ignoring old recipe for target 'pre-install-rb-default'
 Makefile:202: warning: overriding recipe for target '.sitearchdir.time'
-êÿ≈Å≤U:202: warning: ignoring old recipe for target '.sitearchdir.time'
+ê∏E5‰U:202: warning: ignoring old recipe for target '.sitearchdir.time'
 Makefile:212: warning: overriding recipe for target '.cc.o'
-êÿ≈Å≤U:212: warning: ignoring old recipe for target '.cc.o'
+ê∏E5‰U:212: warning: ignoring old recipe for target '.cc.o'
 Makefile:216: warning: overriding recipe for target '.cc.S'
-êÿ≈Å≤U:216: warning: ignoring old recipe for target '.cc.S'
+ê∏E5‰U:216: warning: ignoring old recipe for target '.cc.S'
 Makefile:220: warning: overriding recipe for target '.mm.o'
-êÿ≈Å≤U:220: warning: ignoring old recipe for target '.mm.o'
+ê∏E5‰U:220: warning: ignoring old recipe for target '.mm.o'
 Makefile:224: warning: overriding recipe for target '.mm.S'
-êÿ≈Å≤U:224: warning: ignoring old recipe for target '.mm.S'
+ê∏E5‰U:224: warning: ignoring old recipe for target '.mm.S'
 Makefile:228: warning: overriding recipe for target '.cxx.o'
-êÿ≈Å≤U:228: warning: ignoring old recipe for target '.cxx.o'
+ê∏E5‰U:228: warning: ignoring old recipe for target '.cxx.o'
 Makefile:232: warning: overriding recipe for target '.cxx.S'
-êÿ≈Å≤U:232: warning: ignoring old recipe for target '.cxx.S'
+ê∏E5‰U:232: warning: ignoring old recipe for target '.cxx.S'
 Makefile:236: warning: overriding recipe for target '.cpp.o'
-êÿ≈Å≤U:236: warning: ignoring old recipe for target '.cpp.o'
+ê∏E5‰U:236: warning: ignoring old recipe for target '.cpp.o'
 Makefile:240: warning: overriding recipe for target '.cpp.S'
-êÿ≈Å≤U:240: warning: ignoring old recipe for target '.cpp.S'
+ê∏E5‰U:240: warning: ignoring old recipe for target '.cpp.S'
 Makefile:244: warning: overriding recipe for target '.c.o'
-êÿ≈Å≤U:244: warning: ignoring old recipe for target '.c.o'
+ê∏E5‰U:244: warning: ignoring old recipe for target '.c.o'
 Makefile:248: warning: overriding recipe for target '.c.S'
-êÿ≈Å≤U:248: warning: ignoring old recipe for target '.c.S'
+ê∏E5‰U:248: warning: ignoring old recipe for target '.c.S'
 Makefile:252: warning: overriding recipe for target '.m.o'
-êÿ≈Å≤U:252: warning: ignoring old recipe for target '.m.o'
+ê∏E5‰U:252: warning: ignoring old recipe for target '.m.o'
 Makefile:256: warning: overriding recipe for target '.m.S'
-êÿ≈Å≤U:256: warning: ignoring old recipe for target '.m.S'
+ê∏E5‰U:256: warning: ignoring old recipe for target '.m.S'
 Makefile:260: warning: overriding recipe for target 'ffi_c.so'
-êÿ≈Å≤U:260: warning: ignoring old recipe for target 'ffi_c.so'
+ê∏E5‰U:260: warning: ignoring old recipe for target 'ffi_c.so'
 compiling AbstractMemory.c
 compiling ArrayType.c
 compiling Buffer.c
@@ -153,5 +153,5 @@ Makefile:256: warning: overriding recipe for target '.m.S'
 :256: warning: ignoring old recipe for target '.m.S'
 Makefile:260: warning: overriding recipe for target 'ffi_c.so'
 :260: warning: ignoring old recipe for target 'ffi_c.so'
-/usr/bin/install -c -m 0755 ffi_c.so ./.gem.20210812-11107-c3mvd
+/usr/bin/install -c -m 0755 ffi_c.so ./.gem.20210824-12877-5wplry
 make[1]: Leaving directory '/home/runner/work/visualisering/visualisering/.vendor/bundle/ruby/2.7.0/gems/ffi-1.15.3/ext/ffi_c'

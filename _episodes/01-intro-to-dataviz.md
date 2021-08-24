@@ -38,22 +38,50 @@ formålet med visualilseringen?
 Herunder er der stadig en del kode og andet skrammel, der ikke er fjernet endnu.
 
 ## Why are we visualising data? ##
-Udnytte vores hjerne til at se sammenhænge og mønstre i data - men husk at 
-validere de mønstre, for vi er rigtig gode til at se mønstre der ikke er der
+
+We visualise data for several purposes. They can be broken down to smaller 
+purposes, but the main categories are:
+
+Communicating information
+
+Discovering patterns
+
+In communication of information, we have a result, some information or 
+relationships between data that we want to present to an audience. The goal is
+to tell our audience about something.
+
+An earlier stage of the process is when we use visualisation of data, to discover 
+what is happening in our data. We visualise data to draw on the pattern 
+recognition our brain is equipped with.
+
+A classical example of the value of visualising data is the 
+[https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak](work done by John Snow)
+during an outbreak of cholera in London in 1854. Carefull collection of data on
+where people afflicted by cholera were living resulted in this map:
+
+Stacked rectangles places shows the clusters of cholera cases. Quite close to 
+the largest rectangles we find a water pump, at the intersection of Broad Street
+and Cambridge Street. That pump was the source of the outbreak, that killed 616 
+people. It was located less than 1 meter from a cesspit that was leaking.
+
+Visualising the number of cases made it relatively easy to identify the source 
+and close it down.
+
+
+![RStudio_startup](../fig/1024px-Snow-cholera-map-1.jpg)
+
+
+
 
 Vise andre sammenhænge og mønstre, så de kan forstå data. Der er både et 
 eksplorativt element, hvor vi bruger visualiseringer til at opdage mønstre
 og et kommunikativt element hvor vi bruger visualiseringer til at vise mønstre.
 https://www.visualcapitalist.com/data-visualization-cholera/
 
+Et eksempel:
+https://twitter.com/AndrewDessler/status/1429099366250434562?s=03
 
 
-
-
-~~~
-area_hectares <- 1.0
-~~~
-{: .language-r}
 
 > ## Objects vs. variables
 >
@@ -65,48 +93,6 @@ area_hectares <- 1.0
 {: .callout}
 
 
-
-~~~
-area_hectares <- 1.0    # doesn't print anything
-(area_hectares <- 1.0)  # putting parenthesis around the call prints the value of `area_hectares`
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] 1
-~~~
-{: .output}
-
-
-
-~~~
-area_hectares         # and so does typing the name of the object
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] 1
-~~~
-{: .output}
-
-
-
-~~~
-area_acres <- 2.47 * area_hectares
-~~~
-{: .language-r}
-
-
-
-
-~~~
-area_hectares <- 50
-~~~
-{: .language-r}
 
 > ## Exercise
 > 
@@ -120,23 +106,6 @@ area_hectares <- 50
 > > changing the value of `area_hectares`.
 > {: .solution}
 {: .challenge}
-
-
-
-~~~
-area_hectares <- 1.0			# land area in hectares
-area_acres <- area_hectares * 2.47	# convert to acres
-area_acres				# print land area in acres.
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] 2.47
-~~~
-{: .output}
-
 
 
 > ## Exercise
@@ -191,12 +160,6 @@ area_acres				# print land area in acres.
 
 
 
-
-~~~
-b <- sqrt(a)
-~~~
-{: .language-r}
-
 > ## Exercise
 >
 > Type in `?round` at the console and then look at the output in the Help pane.
@@ -204,137 +167,7 @@ b <- sqrt(a)
 > How do you use the `digits` parameter in the round function?
 {: .challenge}
 
-## Vectors and data types
 
-
-
-
-~~~
-hh_members <- c(3, 7, 10, 6)
-hh_members
-~~~
-{: .language-r}
-
-
-
-~~~
-[1]  3  7 10  6
-~~~
-{: .output}
-
-
-~~~
-respondent_wall_type <- c("muddaub", "burntbricks", "sunbricks")
-respondent_wall_type
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] "muddaub"     "burntbricks" "sunbricks"  
-~~~
-{: .output}
-
-
-~~~
-length(hh_members)
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] 4
-~~~
-{: .output}
-
-
-
-~~~
-length(respondent_wall_type)
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] 3
-~~~
-{: .output}
-
-
-
-~~~
-class(hh_members)
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] "numeric"
-~~~
-{: .output}
-
-
-
-~~~
-class(respondent_wall_type)
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] "character"
-~~~
-{: .output}
-
-
-
-~~~
-str(hh_members)
-~~~
-{: .language-r}
-
-
-
-~~~
- num [1:4] 3 7 10 6
-~~~
-{: .output}
-
-
-
-~~~
-str(respondent_wall_type)
-~~~
-{: .language-r}
-
-
-
-~~~
- chr [1:3] "muddaub" "burntbricks" "sunbricks"
-~~~
-{: .output}
-
-You can use the `c()` function to add other elements to your vector:
-
-~~~
-possessions <- c("bicycle", "radio", "television")
-possessions <- c(possessions, "mobile_phone") # add to the end of the vector
-possessions <- c("car", possessions) # add to the beginning of the vector
-possessions
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] "car"          "bicycle"      "radio"        "television"   "mobile_phone"
-~~~
-{: .output}
 
 
 
@@ -408,302 +241,6 @@ possessions
 
 
 
-~~~
-respondent_wall_type <- c("muddaub", "burntbricks", "sunbricks")
-respondent_wall_type[2]
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] "burntbricks"
-~~~
-{: .output}
-
-
-
-~~~
-respondent_wall_type[c(3, 2)]
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] "sunbricks"   "burntbricks"
-~~~
-{: .output}
-
-We can also repeat the indices to create an object with more elements than the
-original one:
-
-
-~~~
-more_respondent_wall_type <- respondent_wall_type[c(1, 2, 3, 2, 1, 3)]
-more_respondent_wall_type
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] "muddaub"     "burntbricks" "sunbricks"   "burntbricks" "muddaub"    
-[6] "sunbricks"  
-~~~
-{: .output}
-
-
-
-~~~
-hh_members <- c(3, 7, 10, 6)
-hh_members[c(TRUE, FALSE, TRUE, TRUE)]
-~~~
-{: .language-r}
-
-
-
-~~~
-[1]  3 10  6
-~~~
-{: .output}
-
-
-~~~
-hh_members > 5    # will return logicals with TRUE for the indices that meet the condition
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] FALSE  TRUE  TRUE  TRUE
-~~~
-{: .output}
-
-
-
-~~~
-## so we can use this to select only the values above 5
-hh_members[hh_members > 5]
-~~~
-{: .language-r}
-
-
-
-~~~
-[1]  7 10  6
-~~~
-{: .output}
-
-
-
-~~~
-hh_members[hh_members < 4 | hh_members > 7]
-~~~
-{: .language-r}
-
-
-
-~~~
-[1]  3 10
-~~~
-{: .output}
-
-
-
-~~~
-hh_members[hh_members >= 4 & hh_members <= 7]
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] 7 6
-~~~
-{: .output}
-
-
-
-
-~~~
-possessions <- c("car", "bicycle", "radio", "television", "mobile_phone")
-possessions[possessions == "car" | possessions == "bicycle"] # returns both car and bicycle
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] "car"     "bicycle"
-~~~
-{: .output}
-
-
-
-~~~
-possessions %in% c("car", "bicycle")
-~~~
-{: .language-r}
-
-
-
-~~~
-[1]  TRUE  TRUE FALSE FALSE FALSE
-~~~
-{: .output}
-
-
-
-~~~
-possessions %in% c("car", "bicycle", "motorcycle", "truck", "boat", "bus")
-~~~
-{: .language-r}
-
-
-
-~~~
-[1]  TRUE  TRUE FALSE FALSE FALSE
-~~~
-{: .output}
-
-
-
-~~~
-possessions[possessions %in% c("car", "bicycle", "motorcycle", "truck", "boat", "bus")]
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] "car"     "bicycle"
-~~~
-{: .output}
-
-
-
-~~~
-rooms <- c(2, 1, 1, NA, 7)
-mean(rooms)
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] NA
-~~~
-{: .output}
-
-
-
-~~~
-max(rooms)
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] NA
-~~~
-{: .output}
-
-
-
-~~~
-mean(rooms, na.rm = TRUE)
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] 2.75
-~~~
-{: .output}
-
-
-
-~~~
-max(rooms, na.rm = TRUE)
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] 7
-~~~
-{: .output}
-
-
-
-
-~~~
-## Extract those elements which are not missing values.
-rooms[!is.na(rooms)]
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] 2 1 1 7
-~~~
-{: .output}
-
-
-
-~~~
-## Count the number of missing values.
-sum(is.na(rooms))
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] 1
-~~~
-{: .output}
-
-
-
-~~~
-## Returns the object with incomplete cases removed. The returned object is an atomic vector of type `"numeric"` (or `"double"`).
-na.omit(rooms)
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] 2 1 1 7
-attr(,"na.action")
-[1] 4
-attr(,"class")
-[1] "omit"
-~~~
-{: .output}
-
-
-
-~~~
-## Extract those elements which are complete cases. The returned object is an atomic vector of type `"numeric"` (or `"double"`).
-rooms[complete.cases(rooms)]
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] 2 1 1 7
-~~~
-{: .output}
-Recall that you can use the `typeof()` function to find the type of your atomic vector.
 
 > ## Exercise
 >

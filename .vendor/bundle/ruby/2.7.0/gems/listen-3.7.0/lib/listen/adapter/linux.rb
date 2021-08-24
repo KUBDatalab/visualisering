@@ -24,17 +24,14 @@ module Listen
       README_URL = 'https://github.com/guard/listen'\
         '/blob/master/README.md#increasing-the-amount-of-inotify-watchers'
 
-      INOTIFY_LIMIT_MESSAGE = <<-EOS
-        FATAL: Listen error: unable to monitor directories for changes.
-        Visit #{README_URL} for info on how to fix this.
-      EOS
-
       def _configure(directory, &callback)
         require 'rb-inotify'
         @worker ||= ::INotify::Notifier.new
         @worker.watch(directory.to_s, *options.events, &callback)
       rescue Errno::ENOSPC
-        abort(INOTIFY_LIMIT_MESSAGE)
+        raise ::Listen::Error::INotifyMaxWatchesExceeded, <<~EOS
+          Unable to monitor directories for changes because iNotify max watches exceeded. See #{README_URL} .
+        EOS
       end
 
       def _run
