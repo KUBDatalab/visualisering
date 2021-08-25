@@ -73,8 +73,6 @@ dttm  (1): interview_date
 ~~~
 {: .output}
 
-If you were unable to complete the previous lesson or did not save the data,
-then you can create it now.
 
 
 ~~~
@@ -100,35 +98,7 @@ interviews_plotting <- interviews %>%
 ~~~
 {: .language-r}
 
-## Plotting with **`ggplot2`**
 
-**`ggplot2`** is a plotting package that makes it simple to create complex plots
-from data stored in a data frame. It provides a programmatic interface for
-specifying what variables to plot, how they are displayed, and general visual
-properties. Therefore, we only need minimal changes if the underlying data
-change or if we decide to change from a bar plot to a scatterplot. This helps in
-creating publication quality plots with minimal amounts of adjustments and
-tweaking.
-
-**`ggplot2`** functions work best with data in the 'long' format, i.e., a column for every
-dimension, and a row for every observation. Well-structured data will save you
-lots of time when making figures with **`ggplot2`**
-
-ggplot graphics are built step by step by adding new elements. Adding layers in
-this fashion allows for extensive flexibility and customization of plots.
-
-Each chart built with ggplot2 must include the following
-
-* Data  
-* Aesthetic mapping (aes)  
-
-  + Describes how variables are mapped onto graphical attributes  
-  + Visual attribute of data including x-y axes, color, fill, shape, and alpha  
-* Geometric objects (geom)  
-
-  + Determines how values are rendered graphically, as bars (`geom_bar`), scatterplot (`geom_point`), line (`geom_line`), etc. 
-
-Thus, the template for graphic in ggplot2 is:
 
 ```
 <DATA> %>%
@@ -554,13 +524,7 @@ interviews_plotting %>%
 
 <img src="../fig/rmd-04-barplot-dodge-1.png" title="plot of chunk barplot-dodge" alt="plot of chunk barplot-dodge" width="612" style="display: block; margin: auto;" />
 
-This is a nicer graphic, but we're more likely to be interested in the
-proportion of each housing type in each village than in the actual count of
-number of houses of each type (because we might have sampled different numbers
-of households in each village). To compare proportions, we will first create a
-new data frame (`percent_wall_type`) with a new column named "percent"
-representing the percent of each house type in each village. We will remove
-houses with cement walls, as there was only one in the dataset.
+
 
 
 
