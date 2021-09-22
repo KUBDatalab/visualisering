@@ -21,6 +21,22 @@ source: Rmd
 
 ## violin
 
+
+~~~
+mpg$class = with(mpg, reorder(class, hwy, median))
+
+mpg %>%
+  ggplot( aes(x=class, y=hwy, fill=class)) + 
+    geom_violin() +
+    xlab("class") +
+    theme(legend.position="none") +
+    xlab("")
+~~~
+{: .language-r}
+
+<img src="../fig/rmd-05-violin-1.png" title="plot of chunk violin" alt="plot of chunk violin" width="612" style="display: block; margin: auto;" />
+
+
 ## density
 
 ## Histogram
@@ -81,6 +97,10 @@ Grundlæggende et barchart.
 ## Treemap
 
 ## Doughnut
+
+Lige så meget skrammel som lagkagediagrammer.
+<img src="../fig/rmd-05-doughnut-1.png" title="plot of chunk doughnut" alt="plot of chunk doughnut" width="612" style="display: block; margin: auto;" />
+
 
 ## Pie Chart
 
