@@ -40,6 +40,24 @@ formålet med visualilseringen?
 Herunder er der stadig en del kode og andet skrammel, der ikke er fjernet endnu.
 
 
+data + symboler + encoding + anotation = visualisering
+
+
+Tufte suggests six fundamental principles of design: show comparisons, show causality, use multivariate data, completely integrate modes (like text, images, numbers), establish credibility, and focus on content. 
+
+Hvad har vi at gøre godt med?
+Shape
+Color
+Size
+Area
+Volume
+Length
+Angle
+Position
+Direction
+Density
+
+
 Vise andre sammenhænge og mønstre, så de kan forstå data. Der er både et 
 eksplorativt element, hvor vi bruger visualiseringer til at opdage mønstre
 og et kommunikativt element hvor vi bruger visualiseringer til at vise mønstre.
@@ -259,6 +277,54 @@ Og hvorfor vi gør det!
 Napoleons ruslandstogt (http://www.openculture.com/2019/07/napoleons-disastrous-invasion-of-russia-explained-in-an-1869-data-visualization.html)
 Florence Nightingale: https://medium.com/nightingale/from-the-battlefield-to-basketball-a-data-visualization-journey-with-florence-nightingale-c39571686dfc
 https://www.visualcapitalist.com/data-visualization-cholera/
+
+
+
+```{r}
+library(tidyverse)
+library(ggforce)
+
+ggplot() +
+  geom_circle(aes(x0 = 0, y0 = 0, r = 3), fill = "blue") +
+    geom_circle(aes(x0 = 0, y0 = 0, r = 2.65), fill = "white") +
+  geom_circle(aes(x0 = 0, y0 = 0, r = 2.6), fill = "red") +
+  coord_fixed() +
+  theme_void() +
+  labs(title = "A red area overlaps a blue area",
+       subtitle = "How much larger is the blue area?")
+
+```
+The red area is only 75% of the blue area.
+
+
+
+> ## Exercise
+>
+```{r}
+library(tidyverse)
+library(ggforce)
+
+ggplot() +
+  geom_circle(aes(x0 = 0, y0 = 0, r = 3), fill = "blue") +
+    geom_circle(aes(x0 = 0, y0 = 0, r = 2.65), fill = "white") +
+  geom_circle(aes(x0 = 0, y0 = 0, r = 2.6), fill = "red") +
+  coord_fixed() +
+  theme_void() +
+  labs(title = "A red area overlaps a blue area",
+       subtitle = "How much larger is the blue area?")
+
+```
+> How much larger
+> > ## Solution
+> > ```{r, answer=TRUE}
+> > 
+> > 
+> > 75%
+> > 
+> > ```
+> {: .solution}
+{: .challenge}
+
 
 
 
