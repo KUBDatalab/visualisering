@@ -6,26 +6,13 @@ teaching: 50
 exercises: 30
 questions:
 - "What data types are available in R?"
-- "What is an object?"
-- "How can values be initially assigned to variables of different data types?"
-- "What arithmetic and logical operators can be used?"
-- "How can subsets be extracted from vectors?"
-- "How does R treat missing values?"
-- "How can we deal with missing values in R?"
+
 objectives: 
 - "Define the following terms as they relate to R: object, assign, call, function, arguments, options."
-- "Assign values to objects in R."
-- "Learn how to name objects."
-- "Use comments to inform script."
-- "Solve simple arithmetic operations in R."
-- "Call functions and use arguments to change their default options."
-- "Inspect the content of vectors and manipulate their content."
-- "Subset and extract values from vectors."
-- "Analyze vectors with missing data."
+
 keypoints:
 - "Access individual values by location using `[]`."
-- "Access arbitrary sets of data using `[c(...)]`."
-- "Use logical operations and logical vectors to access subsets of data."
+
 source: Rmd
 ---
 
@@ -381,48 +368,45 @@ The red area is only 75% of the blue area.
 
 ~~~
 # Change the filter to select February rather than January
-nycflights <- filter(nycflights, month == 1)
+nycflights <- filter(flights, month == 1)
+nycflights
 ~~~
 {: .language-r}
 
 
 
 ~~~
-Error in filter(nycflights, month == 1): object 'nycflights' not found
+# A tibble: 27,004 × 19
+    year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+   <int> <int> <int>    <int>          <int>     <dbl>    <int>          <int>
+ 1  2013     1     1      517            515         2      830            819
+ 2  2013     1     1      533            529         4      850            830
+ 3  2013     1     1      542            540         2      923            850
+ 4  2013     1     1      544            545        -1     1004           1022
+ 5  2013     1     1      554            600        -6      812            837
+ 6  2013     1     1      554            558        -4      740            728
+ 7  2013     1     1      555            600        -5      913            854
+ 8  2013     1     1      557            600        -3      709            723
+ 9  2013     1     1      557            600        -3      838            846
+10  2013     1     1      558            600        -2      753            745
+# … with 26,994 more rows, and 11 more variables: arr_delay <dbl>,
+#   carrier <chr>, flight <int>, tailnum <chr>, origin <chr>, dest <chr>,
+#   air_time <dbl>, distance <dbl>, hour <dbl>, minute <dbl>, time_hour <dttm>
 ~~~
-{: .error}
+{: .output}
 
 
 ~~~
-nycflights <- filter(nycflights, month == 2)
+nycflights <- filter(flights, month == 2)
 ~~~
 {: .language-r}
-
-
-
-~~~
-Error in filter(nycflights, month == 2): object 'nycflights' not found
-~~~
-{: .error}
 
 
 > ## Exercise
 >
->  
->  ~~~
->   ggplot() +
->  geom_circle(aes(x0 = 0, y0 = 0, r = 3), fill = "blue") +
->    geom_circle(aes(x0 = 0, y0 = 0, r = 2.65), fill = "white") +
->  geom_circle(aes(x0 = 0, y0 = 0, r = 2.6), fill = "red") +
->  coord_fixed() +
->  theme_void() +
->  labs(title = "A red area overlaps a blue area",
->       subtitle = "How much larger is the blue area?")
->  ~~~
->  {: .language-r}
->  
->  <img src="../fig/rmd-01-scatter-challenge-1.png" title="plot of chunk scatter-challenge" alt="plot of chunk scatter-challenge" width="612" style="display: block; margin: auto;" />
-> How much larger
+>  <img src="../fig/rmd-01-area-challenge-1.png" title="plot of chunk area-challenge" alt="plot of chunk area-challenge" width="612" style="display: block; margin: auto;" />
+> How much larger is the blue area? Or: What percentage of the blue 
+> area does the red circle cover?
 > > ## Solution
 > > 
 > > ~~~

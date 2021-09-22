@@ -1,0 +1,159 @@
+---
+title: "Processing JSON data (Optional)"
+teaching: 30
+exercises: 15
+questions:
+- "What is JSON format?"
+
+objectives:
+- "Describe the JSON data format"
+keypoints:
+- "JSON is a popular data format for transferring data used by a great many Web based APIs"
+
+source: Rmd
+---
+
+```{r, include=FALSE}
+source("../bin/chunk-options.R")
+knitr_fig_path("05-")
+source("../bin/download_data.R")
+## load the tidyverse
+library(tidyverse)
+```
+
+# gode til fordelinger
+
+## violin
+
+## density
+
+## Histogram
+
+## Boxplot
+
+## Ridgeline
+
+# Gode til korrelationer
+
+## scatter
+Basic scatterplot
+```{r, purl = FALSE, eval = TRUE, echo = FALSE}
+ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width)) + 
+    geom_point()
+```
+
+alternativ:
+```{r, purl = FALSE, eval = TRUE, echo = FALSE}
+ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width)) + 
+    geom_point(
+        color="black",
+        fill="#69b3a2",
+        shape=22,
+        alpha=0.5,
+        size=6,
+        stroke = 1
+        ) 
+```
+
+
+## Heatmap
+
+## Correlogram
+
+## Bubble
+
+## Connected scatter
+
+## Density 2d
+
+# Gode til ranking
+
+## Barplot
+
+
+```{r, purl = FALSE, eval = TRUE, echo = FALSE}
+ggplot(mtcars, aes(x=as.factor(cyl), fill=as.factor(cyl) )) +  
+  geom_bar( ) +
+  scale_fill_manual(values = c("red", "green", "blue") ) +
+  theme(legend.position="none")
+```
+If there is no natural order of the x-values, consider reordering 
+by size:
+
+```{r, purl = FALSE, eval = TRUE, echo = FALSE}
+mtcars %>% 
+  mutate(cyl = factor(cyl)) %>% 
+  mutate(cyl = fct_infreq(cyl)) %>% 
+ggplot(aes(x=cyl, fill=as.factor(cyl) )) +  
+  geom_bar( ) +
+  scale_fill_manual(values = c("red", "green", "blue") ) +
+  theme(legend.position="none")
+```
+
+
+## Spider/radarplot
+
+## Wordcloud
+
+## Parallel
+
+## Lollipop
+
+## Cirkulær barplot
+
+# gode til at vise dele af en helhed
+
+## grupperet og stakket barplot
+
+## Treemap
+
+## Doughnut
+
+## Pie Chart
+
+## Dendrogram
+
+## Circular packing
+
+# Good for showing evolution
+
+## line plot
+
+## Area
+
+## Stacked area
+
+## Streamchart
+
+## time series
+
+# Good for geograpical data
+
+## Map
+
+## Choropleth
+
+## Hexbin map
+
+## Cartogram
+
+## Connection
+
+## Bubble map
+
+# Good for showing flow
+
+## Chord diagram
+
+## Network
+
+## Sankey
+
+## Arc diagram
+
+## Edge Bundling
+
+#
+
+
+{% include links.md %}

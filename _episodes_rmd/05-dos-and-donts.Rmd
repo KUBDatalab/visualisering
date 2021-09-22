@@ -1,0 +1,39 @@
+---
+title: "Dos and donts"
+teaching: 30
+exercises: 15
+output: 
+  html_document:
+    df_print: paged
+objectives:
+- "Create a .Rmd document containing R code, text, and plots"
+keypoints: 
+- "R Markdown is a useful language for creating reproducible documents combining text and executable R-code."
+
+source: Rmd
+questions:
+- "What is R Markdown?"
+
+---
+
+```{r setup, include = FALSE}
+source("../bin/chunk-options.R")
+knitr_fig_path("06-")
+source("../bin/download_data.R")
+```
+
+
+```{r package-data, echo = FALSE, message = FALSE, purl = FALSE}
+library(tidyverse)
+interviews <- read_csv("data/SAFI_clean.csv", na = "NULL")
+```
+
+https://www.data-to-viz.com/caveats.html
+
+When displaying value of several entities - order them.
+
+Klip ikke i y-aksen!!!
+
+Line graphs med for mange linier bliver ulæseslige
+
+pie charts er ringe fordi vi er dårlige til at vurdere vinkler
