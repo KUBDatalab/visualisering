@@ -4,26 +4,13 @@ teaching: 50
 exercises: 30
 questions:
 - "What data types are available in R?"
-- "What is an object?"
-- "How can values be initially assigned to variables of different data types?"
-- "What arithmetic and logical operators can be used?"
-- "How can subsets be extracted from vectors?"
-- "How does R treat missing values?"
-- "How can we deal with missing values in R?"
+
 objectives: 
 - "Define the following terms as they relate to R: object, assign, call, function, arguments, options."
-- "Assign values to objects in R."
-- "Learn how to name objects."
-- "Use comments to inform script."
-- "Solve simple arithmetic operations in R."
-- "Call functions and use arguments to change their default options."
-- "Inspect the content of vectors and manipulate their content."
-- "Subset and extract values from vectors."
-- "Analyze vectors with missing data."
+
 keypoints:
 - "Access individual values by location using `[]`."
-- "Access arbitrary sets of data using `[c(...)]`."
-- "Use logical operations and logical vectors to access subsets of data."
+
 source: Rmd
 ---
 
@@ -300,17 +287,18 @@ The red area is only 75% of the blue area.
 
 ```{r filter, exercise=TRUE}
 # Change the filter to select February rather than January
-nycflights <- filter(nycflights, month == 1)
+nycflights <- filter(flights, month == 1)
+nycflights
 ```
 
 ```{r filter-solution}
-nycflights <- filter(nycflights, month == 2)
+nycflights <- filter(flights, month == 2)
 ```
 
 
 > ## Exercise
 >
->  ```{r area-challenge, answer=TRUE, purl=FALSE}
+>  ```{r area-challenge, answer=TRUE, purl=FALSE, echo = FALSE}
 > ggplot() +
 >  geom_circle(aes(x0 = 0, y0 = 0, r = 3), fill = "blue") +
 >    geom_circle(aes(x0 = 0, y0 = 0, r = 2.65), fill = "white") +
