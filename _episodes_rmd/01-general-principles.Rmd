@@ -310,12 +310,15 @@ nycflights <- filter(nycflights, month == 2)
 > ## Exercise
 >
 >  ```{r scatter-challenge, answer=TRUE, purl=FALSE}
->  interviews_plotting %>%
->      ggplot(aes(x = village, y = rooms)) +
->      geom_jitter(aes(color = respondent_wall_type),
-> 		    alpha = 0.5,
->  		    width = 0.2,
->  		    height = 0.2)
+> ggplot() +
+>  geom_circle(aes(x0 = 0, y0 = 0, r = 3), fill = "blue") +
+>    geom_circle(aes(x0 = 0, y0 = 0, r = 2.65), fill = "white") +
+>  geom_circle(aes(x0 = 0, y0 = 0, r = 2.6), fill = "red") +
+>  coord_fixed() +
+>  theme_void() +
+>  labs(title = "A red area overlaps a blue area",
+>       subtitle = "How much larger is the blue area?")
+>
 >  ```
 > How much larger
 > > ## Solution

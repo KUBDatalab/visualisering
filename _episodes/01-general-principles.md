@@ -410,21 +410,18 @@ Error in filter(nycflights, month == 2): object 'nycflights' not found
 >
 >  
 >  ~~~
->  interviews_plotting %>%
->      ggplot(aes(x = village, y = rooms)) +
->      geom_jitter(aes(color = respondent_wall_type),
->   		    alpha = 0.5,
->  		    width = 0.2,
->  		    height = 0.2)
+>   ggplot() +
+>  geom_circle(aes(x0 = 0, y0 = 0, r = 3), fill = "blue") +
+>    geom_circle(aes(x0 = 0, y0 = 0, r = 2.65), fill = "white") +
+>  geom_circle(aes(x0 = 0, y0 = 0, r = 2.6), fill = "red") +
+>  coord_fixed() +
+>  theme_void() +
+>  labs(title = "A red area overlaps a blue area",
+>       subtitle = "How much larger is the blue area?")
 >  ~~~
 >  {: .language-r}
 >  
->  
->  
->  ~~~
->  Error in ggplot(., aes(x = village, y = rooms)): object 'interviews_plotting' not found
->  ~~~
->  {: .error}
+>  <img src="../fig/rmd-01-scatter-challenge-1.png" title="plot of chunk scatter-challenge" alt="plot of chunk scatter-challenge" width="612" style="display: block; margin: auto;" />
 > How much larger
 > > ## Solution
 > > 
