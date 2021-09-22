@@ -379,9 +379,52 @@ The red area is only 75% of the blue area.
 
 
 
+~~~
+# Change the filter to select February rather than January
+nycflights <- filter(nycflights, month == 1)
+~~~
+{: .language-r}
+
+
+
+~~~
+Error in filter(nycflights, month == 1): object 'nycflights' not found
+~~~
+{: .error}
+
+
+~~~
+nycflights <- filter(nycflights, month == 2)
+~~~
+{: .language-r}
+
+
+
+~~~
+Error in filter(nycflights, month == 2): object 'nycflights' not found
+~~~
+{: .error}
+
+
 > ## Exercise
 >
-
+>  
+>  ~~~
+>  interviews_plotting %>%
+>      ggplot(aes(x = village, y = rooms)) +
+>      geom_jitter(aes(color = respondent_wall_type),
+>   		    alpha = 0.5,
+>  		    width = 0.2,
+>  		    height = 0.2)
+>  ~~~
+>  {: .language-r}
+>  
+>  
+>  
+>  ~~~
+>  Error in ggplot(., aes(x = village, y = rooms)): object 'interviews_plotting' not found
+>  ~~~
+>  {: .error}
 > How much larger
 > > ## Solution
 > > 

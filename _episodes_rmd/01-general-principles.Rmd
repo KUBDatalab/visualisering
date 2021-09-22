@@ -297,10 +297,26 @@ ggplot() +
 The red area is only 75% of the blue area.
 
 
+```{r filter, exercise=TRUE}
+# Change the filter to select February rather than January
+nycflights <- filter(nycflights, month == 1)
+```
+
+```{r filter-solution}
+nycflights <- filter(nycflights, month == 2)
+```
+
 
 > ## Exercise
 >
-
+>  ```{r scatter-challenge, answer=TRUE, purl=FALSE}
+>  interviews_plotting %>%
+>      ggplot(aes(x = village, y = rooms)) +
+>      geom_jitter(aes(color = respondent_wall_type),
+> 		    alpha = 0.5,
+>  		    width = 0.2,
+>  		    height = 0.2)
+>  ```
 > How much larger
 > > ## Solution
 > > ```{r, answer=TRUE}
