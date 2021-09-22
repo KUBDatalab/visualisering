@@ -382,22 +382,6 @@ The red area is only 75% of the blue area.
 > ## Exercise
 >
 
-~~~
-library(tidyverse)
-library(ggforce)
-
-ggplot() +
-  geom_circle(aes(x0 = 0, y0 = 0, r = 3), fill = "blue") +
-    geom_circle(aes(x0 = 0, y0 = 0, r = 2.65), fill = "white") +
-  geom_circle(aes(x0 = 0, y0 = 0, r = 2.6), fill = "red") +
-  coord_fixed() +
-  theme_void() +
-  labs(title = "A red area overlaps a blue area",
-       subtitle = "How much larger is the blue area?")
-~~~
-{: .language-r}
-
-<img src="../fig/rmd-01-unnamed-chunk-7-1.png" title="plot of chunk unnamed-chunk-7" alt="plot of chunk unnamed-chunk-7" width="612" style="display: block; margin: auto;" />
 > How much larger
 > > ## Solution
 > > 
