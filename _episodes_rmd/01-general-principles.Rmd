@@ -31,6 +31,7 @@ source: Rmd
 source("../bin/chunk-options.R")
 knitr_fig_path("01-")
 source("../bin/download_data.R")
+library(nycflights13)
 ```
 
 Først og fremmest - hvem er din målgruppe, hvad er det du vil vise? Hvad er 
@@ -309,7 +310,7 @@ nycflights <- filter(nycflights, month == 2)
 
 > ## Exercise
 >
->  ```{r scatter-challenge, answer=TRUE, purl=FALSE}
+>  ```{r area-challenge, answer=TRUE, purl=FALSE}
 > ggplot() +
 >  geom_circle(aes(x0 = 0, y0 = 0, r = 3), fill = "blue") +
 >    geom_circle(aes(x0 = 0, y0 = 0, r = 2.65), fill = "white") +
@@ -320,7 +321,8 @@ nycflights <- filter(nycflights, month == 2)
 >       subtitle = "How much larger is the blue area?")
 >
 >  ```
-> How much larger
+> How much larger is the blue area? Or: What percentage of the blue 
+> area does the red circle cover?
 > > ## Solution
 > > ```{r, answer=TRUE}
 > > 
