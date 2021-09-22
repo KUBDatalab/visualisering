@@ -69,6 +69,9 @@ by size:
 
 ## Lollipop
 
+<img src="../fig/rmd-05-lollypop-1.png" title="plot of chunk lollypop" alt="plot of chunk lollypop" width="612" style="display: block; margin: auto;" />
+Grundlæggende et barchart. 
+
 ## Cirkulær barplot
 
 # gode til at vise dele af en helhed
@@ -80,6 +83,73 @@ by size:
 ## Doughnut
 
 ## Pie Chart
+
+<img src="../fig/rmd-05-pie-chart-1.png" title="plot of chunk pie-chart" alt="plot of chunk pie-chart" width="612" style="display: block; margin: auto;" />
+
+Men pie-charts er noget skrammel
+
+
+
+~~~
+library(patchwork)
+data1 <- data.frame( name=letters[1:5], value=c(17,18,20,22,24) )
+data2 <- data.frame( name=letters[1:5], value=c(20,18,21,20,20) )
+data3 <- data.frame( name=letters[1:5], value=c(24,23,21,19,18) )
+plot_pie <- function(data, vec){
+
+ggplot(data, aes(x="name", y=value, fill=name)) +
+  geom_bar(width = 1, stat = "identity") +
+  coord_polar("y", start=0, direction = -1) +
+  geom_text(aes(y = vec, label = rev(name), size=4, color=c( "white", rep("black", 4)))) +
+  scale_color_manual(values=c("black", "white")) +
+  theme(
+    legend.position="none",
+    plot.title = element_text(size=14),
+    panel.grid = element_blank(),
+    axis.text = element_blank(),
+    legend.spacing=unit(0, "null")
+  ) +
+  xlab("") +
+  ylab("")
+  
+}
+a <- plot_pie(data1, c(10,35,55,75,93))
+b <- plot_pie(data2, c(10,35,53,75,93))
+c <- plot_pie(data3, c(10,29,50,75,93))
+a + b + c
+~~~
+{: .language-r}
+
+<img src="../fig/rmd-05-unnamed-chunk-6-1.png" title="plot of chunk unnamed-chunk-6" alt="plot of chunk unnamed-chunk-6" width="612" style="display: block; margin: auto;" />
+
+
+~~~
+plot_bar <- function(data){
+  ggplot(data, aes(x=name, y=value, fill=name)) +
+    geom_bar( stat = "identity") +
+    scale_color_manual(values=c("black", "white")) +
+    theme(
+      legend.position="none",
+      plot.title = element_text(size=14),
+      panel.grid = element_blank(),
+    ) +
+    ylim(0,25) +
+    xlab("") +
+    ylab("")
+}
+
+# Make 3 barplots
+a <- plot_bar(data1)
+b <- plot_bar(data2)
+c <- plot_bar(data3)
+
+# Put them together with patchwork
+a + b + c
+~~~
+{: .language-r}
+
+<img src="../fig/rmd-05-unnamed-chunk-7-1.png" title="plot of chunk unnamed-chunk-7" alt="plot of chunk unnamed-chunk-7" width="612" style="display: block; margin: auto;" />
+
 
 ## Dendrogram
 

@@ -99,6 +99,27 @@ ggplot(aes(x=cyl, fill=as.factor(cyl) )) +
 
 ## Lollipop
 
+```{r lollypop, purl = FALSE, eval = TRUE, echo = FALSE}
+# Create data
+data <- data.frame(
+  x=LETTERS[1:26],
+  y=abs(rnorm(26))
+)
+
+# Horizontal version
+ggplot(data, aes(x=x, y=y)) +
+  geom_segment( aes(x=x, xend=x, y=0, yend=y), color="skyblue") +
+  geom_point( color="blue", size=4, alpha=0.6) +
+  theme_light() +
+  coord_flip() +
+  theme(
+    panel.grid.major.y = element_blank(),
+    panel.border = element_blank(),
+    axis.ticks.y = element_blank()
+  )
+```
+Grundlæggende et barchart. 
+
 ## Cirkulær barplot
 
 # gode til at vise dele af en helhed
@@ -110,6 +131,87 @@ ggplot(aes(x=cyl, fill=as.factor(cyl) )) +
 ## Doughnut
 
 ## Pie Chart
+
+```{r pie-chart, purl = FALSE, eval = TRUE, echo = FALSE }
+# Create Data
+data <- data.frame(
+  group=LETTERS[1:5],
+  value=c(13,7,9,21,2)
+)
+# Compute the position of labels
+data <- data %>% 
+  arrange(desc(group)) %>%
+  mutate(prop = value / sum(data$value) *100) %>%
+  mutate(ypos = cumsum(prop)- 0.5*prop )
+
+# Basic piechart
+ggplot(data, aes(x="", y=prop, fill=group)) +
+  geom_bar(stat="identity", width=1, color="white") +
+  coord_polar("y", start=0) +
+  theme_void() + 
+  theme(legend.position="none") +
+  
+  geom_text(aes(y = ypos, label = group), color = "white", size=6) +
+  scale_fill_brewer(palette="Set1")
+```
+
+Men pie-charts er noget skrammel
+
+
+```{r}
+library(patchwork)
+data1 <- data.frame( name=letters[1:5], value=c(17,18,20,22,24) )
+data2 <- data.frame( name=letters[1:5], value=c(20,18,21,20,20) )
+data3 <- data.frame( name=letters[1:5], value=c(24,23,21,19,18) )
+plot_pie <- function(data, vec){
+
+ggplot(data, aes(x="name", y=value, fill=name)) +
+  geom_bar(width = 1, stat = "identity") +
+  coord_polar("y", start=0, direction = -1) +
+  geom_text(aes(y = vec, label = rev(name), size=4, color=c( "white", rep("black", 4)))) +
+  scale_color_manual(values=c("black", "white")) +
+  theme(
+    legend.position="none",
+    plot.title = element_text(size=14),
+    panel.grid = element_blank(),
+    axis.text = element_blank(),
+    legend.spacing=unit(0, "null")
+  ) +
+  xlab("") +
+  ylab("")
+  
+}
+a <- plot_pie(data1, c(10,35,55,75,93))
+b <- plot_pie(data2, c(10,35,53,75,93))
+c <- plot_pie(data3, c(10,29,50,75,93))
+a + b + c
+```
+
+```{r}
+
+plot_bar <- function(data){
+  ggplot(data, aes(x=name, y=value, fill=name)) +
+    geom_bar( stat = "identity") +
+    scale_color_manual(values=c("black", "white")) +
+    theme(
+      legend.position="none",
+      plot.title = element_text(size=14),
+      panel.grid = element_blank(),
+    ) +
+    ylim(0,25) +
+    xlab("") +
+    ylab("")
+}
+
+# Make 3 barplots
+a <- plot_bar(data1)
+b <- plot_bar(data2)
+c <- plot_bar(data3)
+
+# Put them together with patchwork
+a + b + c
+```
+
 
 ## Dendrogram
 
