@@ -1,0 +1,119 @@
+---
+title: "Processing JSON data (Optional)"
+teaching: 30
+exercises: 15
+questions:
+- "What is JSON format?"
+
+objectives:
+- "Describe the JSON data format"
+keypoints:
+- "JSON is a popular data format for transferring data used by a great many Web based APIs"
+
+source: Rmd
+---
+
+```{r, include=FALSE}
+source("../bin/chunk-options.R")
+knitr_fig_path("05-")
+source("../bin/download_data.R")
+## load the tidyverse
+library(tidyverse)
+```
+
+# gode til fordelinger
+
+## violin
+
+## density
+
+## Histogram
+
+## Boxplot
+
+## Ridgeline
+
+# Gode til korrelationer
+
+## scatter
+
+## Heatmap
+
+## Correlogram
+
+## Bubble
+
+## Connected scatter
+
+## Density 2d
+
+# Gode til ranking
+
+## Barplot
+
+## Spider/radarplot
+
+## Wordcloud
+
+## Parallel
+
+## Lollipop
+
+## Cirkulær barplot
+
+# gode til at vise dele af en helhed
+
+## grupperet og stakket barplot
+
+## Treemap
+
+## Doughnut
+
+## Pie Chart
+
+## Dendrogram
+
+## Circular packing
+
+# Good for showing evolution
+
+## line plot
+
+## Area
+
+## Stacked area
+
+## Streamchart
+
+## time series
+
+# Good for geograpical data
+
+## Map
+
+## Choropleth
+
+## Hexbin map
+
+## Cartogram
+
+## Connection
+
+## Bubble map
+
+# Good for showing flow
+
+## Chord diagram
+
+## Network
+
+## Sankey
+
+## Arc diagram
+
+## Edge Bundling
+
+#
+
+
+{% include links.md %}
