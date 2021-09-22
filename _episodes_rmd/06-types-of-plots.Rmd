@@ -36,6 +36,25 @@ library(tidyverse)
 # Gode til korrelationer
 
 ## scatter
+Basic scatterplot
+```{r, purl = FALSE, eval = TRUE, echo = FALSE}
+ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width)) + 
+    geom_point()
+```
+
+alternativ:
+```{r, purl = FALSE, eval = TRUE, echo = FALSE}
+ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width)) + 
+    geom_point(
+        color="black",
+        fill="#69b3a2",
+        shape=22,
+        alpha=0.5,
+        size=6,
+        stroke = 1
+        ) 
+```
+
 
 ## Heatmap
 
@@ -50,6 +69,27 @@ library(tidyverse)
 # Gode til ranking
 
 ## Barplot
+
+
+```{r, purl = FALSE, eval = TRUE, echo = FALSE}
+ggplot(mtcars, aes(x=as.factor(cyl), fill=as.factor(cyl) )) +  
+  geom_bar( ) +
+  scale_fill_manual(values = c("red", "green", "blue") ) +
+  theme(legend.position="none")
+```
+If there is no natural order of the x-values, consider reordering 
+by size:
+
+```{r, purl = FALSE, eval = TRUE, echo = FALSE}
+mtcars %>% 
+  mutate(cyl = factor(cyl)) %>% 
+  mutate(cyl = fct_infreq(cyl)) %>% 
+ggplot(aes(x=cyl, fill=as.factor(cyl) )) +  
+  geom_bar( ) +
+  scale_fill_manual(values = c("red", "green", "blue") ) +
+  theme(legend.position="none")
+```
+
 
 ## Spider/radarplot
 
