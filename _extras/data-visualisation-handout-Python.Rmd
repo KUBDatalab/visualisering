@@ -1,5 +1,6 @@
 ---
-title: "Code Handout - Data Wrangling with dplyr & tidyr"
+title: "Code Handout - The graphs in Python"
+
 output:
   html_document:
     df_print: paged

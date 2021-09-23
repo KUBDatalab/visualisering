@@ -1,5 +1,5 @@
 ---
-title: "Code Handout - Data Visualisation with ggplot2"
+title: "Code Handout - The graphs in R"
 output:
   html_document:
     df_print: paged
