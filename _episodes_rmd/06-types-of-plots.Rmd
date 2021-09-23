@@ -1,5 +1,5 @@
 ---
-title: "Processing JSON data (Optional)"
+title: "types of plots"
 teaching: 30
 exercises: 15
 questions:
@@ -32,26 +32,62 @@ mpg %>%
   ggplot( aes(x=class, y=hwy, fill=class)) + 
     geom_violin() +
     xlab("class") +
+    theme_void() +
     theme(legend.position="none") +
     xlab("")
+   
+
 
 
 ```
 
 
 ## density
+```{r density, purl = FALSE, eval = TRUE, echo = FALSE}
+ggplot(diamonds, aes(carat)) +geom_density(fill="#69b3a2", color="#e9ecef", alpha=0.8) +
+  xlim(c(0,3))
+```
 
 ## Histogram
 
+```{r histogram, purl = FALSE, eval = TRUE, echo = FALSE}
+data=data.frame(value=rnorm(100))
+
+# basic histogram
+ggplot(data, aes(x=value)) + 
+  geom_histogram()
+```
+
+
 ## Boxplot
 
+```{r boxplot, purl = FALSE, eval = TRUE, echo = FALSE}
+ggplot(mtcars, aes(x=as.factor(cyl), y=mpg)) + 
+    geom_boxplot(fill="slateblue", alpha=0.2) + 
+    xlab("cyl")
+```
+
+
 ## Ridgeline
+
+```{r ridgeline, purl = FALSE, eval = TRUE, echo = FALSE}
+library(ggridges)
+ggplot(lincoln_weather, aes(x = `Mean Temperature [F]`, y = `Month`, fill = ..x..)) +
+  geom_density_ridges_gradient(scale = 3, rel_min_height = 0.01) +
+  labs(title = 'Temperatures in Lincoln NE in 2016') +
+  theme(
+      legend.position="none",
+      panel.spacing = unit(0.1, "lines"),
+      strip.text.x = element_text(size = 8)
+    )
+```
+
 
 # Gode til korrelationer
 
 ## scatter
 Basic scatterplot
-```{r, purl = FALSE, eval = TRUE, echo = FALSE}
+```{r scatter, purl = FALSE, eval = TRUE, echo = FALSE}
 ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width)) + 
     geom_point()
 ```

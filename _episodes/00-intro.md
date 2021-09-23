@@ -6,20 +6,60 @@ teaching: 25
 exercises: 15
 questions:
 - "How to find your way around RStudio?"
-- "How to interact with R?"
-- "How to manage your environment?"
-- "How to install packages?"
+
 objectives:
 - "Install latest version of R."
-- "Install latest version of RStudio."
-- "Navigate the RStudio GUI."
-- "Install additional packages using the packages tab."
-- "Install additional packages using R code."
 keypoints:
 - "Use RStudio to write and run R programs."
-- "Use `install.packages()` to install packages (libraries)."
+
 source: Rmd
 ---
+
+
+
+
+# Strukturen
+
+1. hvad skal vi overveje når vi visualiserer
+
+Hvad vil vi vise
+
+Hvilke data skal vi bruge
+
+Målgruppe
+
+Æstetik vs information
+
+1.5 Hvilke visuelle elementer har vi at arbejde med?
+
+Position
+
+Længde
+
+Areal
+
+Volumen
+
+Form
+
+Vinkel
+
+Farve
+
+Animation
+
+2. Hvordan oversættes det til visuelle elementer?
+
+3. faldgruber
+
+
+
+
+# Andet
+
+Chart junk
+
+data til blæk forhold
 
 
 
