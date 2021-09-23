@@ -102,7 +102,7 @@ workshop-check :
 RMD_SRC = $(wildcard _episodes_rmd/*.Rmd)
 RMD_DST = $(patsubst _episodes_rmd/%.Rmd,_episodes/%.md,$(RMD_SRC))
 # JPN R markdown extras
-RMD_SRC_EXTRAS = $(wildcard _extras_rmd/extra-*.Rmd)
+RMD_SRC_EXTRAS = $(wildcard _extras_rmd/-*.Rmd)
 RMD_DST_EXTRAS = $(patsubst _extras_rmd/%.Rmd,_extras/%.md,$(RMD_SRC_EXTRAS))
 
 # Lesson source files in the order they appear in the navigation menu.
@@ -156,6 +156,7 @@ unittest :
 lesson-files :
 	@echo 'RMD_SRC:' ${RMD_SRC}
 	@echo 'RMD_DST:' ${RMD_DST}
+	@echo ''
 	@echo 'MARKDOWN_SRC:' ${MARKDOWN_SRC}
 	@echo 'HTML_DST:' ${HTML_DST}
 
