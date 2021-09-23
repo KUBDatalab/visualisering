@@ -110,6 +110,7 @@ MARKDOWN_SRC = \
   $(sort $(wildcard _episodes/*.md)) \
   reference.md \
   $(sort $(wildcard _extras/*.md)) \
+  $(sort $(wildcard _extras/*.Rmd)) \
   LICENSE.md
 
 # Generated lesson files in the order they appear in the navigation menu.
