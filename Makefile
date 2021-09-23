@@ -101,6 +101,9 @@ workshop-check :
 # RMarkdown files
 RMD_SRC = $(wildcard _episodes_rmd/*.Rmd)
 RMD_DST = $(patsubst _episodes_rmd/%.Rmd,_episodes/%.md,$(RMD_SRC))
+# JPN R markdown extras
+RMD_SRC_EXTRAS = $(wildcard _extras_rmd/extra-*.Rmd)
+RMD_DST_EXTRAS = $(patsubst _extras_rmd/%.Rmd,_extras/%.md,$(RMD_SRC_EXTRAS))
 
 # Lesson source files in the order they appear in the navigation menu.
 MARKDOWN_SRC = \
@@ -110,7 +113,6 @@ MARKDOWN_SRC = \
   $(sort $(wildcard _episodes/*.md)) \
   reference.md \
   $(sort $(wildcard _extras/*.md)) \
-  $(sort $(wildcard _extras/*.Rmd)) \
   LICENSE.md
 
 # Generated lesson files in the order they appear in the navigation menu.
@@ -121,7 +123,6 @@ HTML_DST = \
   $(patsubst _episodes/%.md,${DST}/%/index.html,$(sort $(wildcard _episodes/*.md))) \
   ${DST}/reference.html \
   $(patsubst _extras/%.md,${DST}/%/index.html,$(sort $(wildcard _extras/*.md))) \
-  $(patsubst _extras/%.Rmd,${DST}/%/index.html,$(sort $(wildcard _extras/*.Rmd))) \
   ${DST}/license/index.html
 
 ## * install-rmd-deps : Install R packages dependencies to build the RMarkdown lesson
@@ -129,11 +130,14 @@ install-rmd-deps:
 	@${SHELL} bin/install_r_deps.sh
 
 ## * lesson-md        : convert Rmarkdown files to markdown
-lesson-md : ${RMD_DST}
+lesson-md : ${RMD_DST} ${RMD_DST_EXTRAS}
 
 _episodes/%.md: _episodes_rmd/%.Rmd install-rmd-deps
-	@mkdir -p _episodes
+	@mkdir -p _episodes 
 	@bin/knit_lessons.sh $< $@
+
+_extras/%.md: _extras_rmd/%.Rmd
+	@bin/knit_extras.sh $< $@
 
 ## * lesson-check     : validate lesson Markdown
 lesson-check : lesson-fixme

@@ -1,5 +1,5 @@
 current directory: /home/runner/work/visualisering/visualisering/.vendor/bundle/ruby/2.7.0/gems/unf_ext-0.0.8/ext/unf_ext
-/opt/hostedtoolcache/Ruby/2.7.4/x64/bin/ruby -I /opt/hostedtoolcache/Ruby/2.7.4/x64/lib/ruby/2.7.0 -r ./siteconf20210923-12492-zssrrp.rb extconf.rb
+/opt/hostedtoolcache/Ruby/2.7.4/x64/bin/ruby -I /opt/hostedtoolcache/Ruby/2.7.4/x64/lib/ruby/2.7.0 -r ./siteconf20210923-12500-m4x4i3.rb extconf.rb
 checking for -lstdc++... yes
 creating Makefile
 
@@ -7,82 +7,82 @@ current directory: /home/runner/work/visualisering/visualisering/.vendor/bundle/
 make "DESTDIR=" clean
 make[1]: Entering directory '/home/runner/work/visualisering/visualisering/.vendor/bundle/ruby/2.7.0/gems/unf_ext-0.0.8/ext/unf_ext'
 Makefile:175: warning: overriding recipe for target 'clean'
-@ú.V:175: warning: ignoring old recipe for target 'clean'
+¿‹ÃÒŒU:175: warning: ignoring old recipe for target 'clean'
 Makefile:182: warning: overriding recipe for target 'distclean'
-@ú.V:182: warning: ignoring old recipe for target 'distclean'
+¿‹ÃÒŒU:182: warning: ignoring old recipe for target 'distclean'
 Makefile:190: warning: overriding recipe for target 'install-so'
-@ú.V:190: warning: ignoring old recipe for target 'install-so'
+¿‹ÃÒŒU:190: warning: ignoring old recipe for target 'install-so'
 Makefile:200: warning: overriding recipe for target 'pre-install-rb-default'
-@ú.V:200: warning: ignoring old recipe for target 'pre-install-rb-default'
+¿‹ÃÒŒU:200: warning: ignoring old recipe for target 'pre-install-rb-default'
 Makefile:202: warning: overriding recipe for target '.sitearchdir.time'
-@ú.V:202: warning: ignoring old recipe for target '.sitearchdir.time'
+¿‹ÃÒŒU:202: warning: ignoring old recipe for target '.sitearchdir.time'
 Makefile:212: warning: overriding recipe for target '.cc.o'
-@ú.V:212: warning: ignoring old recipe for target '.cc.o'
+¿‹ÃÒŒU:212: warning: ignoring old recipe for target '.cc.o'
 Makefile:216: warning: overriding recipe for target '.cc.S'
-@ú.V:216: warning: ignoring old recipe for target '.cc.S'
+¿‹ÃÒŒU:216: warning: ignoring old recipe for target '.cc.S'
 Makefile:220: warning: overriding recipe for target '.mm.o'
-@ú.V:220: warning: ignoring old recipe for target '.mm.o'
+¿‹ÃÒŒU:220: warning: ignoring old recipe for target '.mm.o'
 Makefile:224: warning: overriding recipe for target '.mm.S'
-@ú.V:224: warning: ignoring old recipe for target '.mm.S'
+¿‹ÃÒŒU:224: warning: ignoring old recipe for target '.mm.S'
 Makefile:228: warning: overriding recipe for target '.cxx.o'
-@ú.V:228: warning: ignoring old recipe for target '.cxx.o'
+¿‹ÃÒŒU:228: warning: ignoring old recipe for target '.cxx.o'
 Makefile:232: warning: overriding recipe for target '.cxx.S'
-@ú.V:232: warning: ignoring old recipe for target '.cxx.S'
+¿‹ÃÒŒU:232: warning: ignoring old recipe for target '.cxx.S'
 Makefile:236: warning: overriding recipe for target '.cpp.o'
-@ú.V:236: warning: ignoring old recipe for target '.cpp.o'
+¿‹ÃÒŒU:236: warning: ignoring old recipe for target '.cpp.o'
 Makefile:240: warning: overriding recipe for target '.cpp.S'
-@ú.V:240: warning: ignoring old recipe for target '.cpp.S'
+¿‹ÃÒŒU:240: warning: ignoring old recipe for target '.cpp.S'
 Makefile:244: warning: overriding recipe for target '.c.o'
-@ú.V:244: warning: ignoring old recipe for target '.c.o'
+¿‹ÃÒŒU:244: warning: ignoring old recipe for target '.c.o'
 Makefile:248: warning: overriding recipe for target '.c.S'
-@ú.V:248: warning: ignoring old recipe for target '.c.S'
+¿‹ÃÒŒU:248: warning: ignoring old recipe for target '.c.S'
 Makefile:252: warning: overriding recipe for target '.m.o'
-@ú.V:252: warning: ignoring old recipe for target '.m.o'
+¿‹ÃÒŒU:252: warning: ignoring old recipe for target '.m.o'
 Makefile:256: warning: overriding recipe for target '.m.S'
-@ú.V:256: warning: ignoring old recipe for target '.m.S'
+¿‹ÃÒŒU:256: warning: ignoring old recipe for target '.m.S'
 Makefile:260: warning: overriding recipe for target 'unf_ext.so'
-@ú.V:260: warning: ignoring old recipe for target 'unf_ext.so'
+¿‹ÃÒŒU:260: warning: ignoring old recipe for target 'unf_ext.so'
 make[1]: Leaving directory '/home/runner/work/visualisering/visualisering/.vendor/bundle/ruby/2.7.0/gems/unf_ext-0.0.8/ext/unf_ext'
 
 current directory: /home/runner/work/visualisering/visualisering/.vendor/bundle/ruby/2.7.0/gems/unf_ext-0.0.8/ext/unf_ext
 make "DESTDIR="
 make[1]: Entering directory '/home/runner/work/visualisering/visualisering/.vendor/bundle/ruby/2.7.0/gems/unf_ext-0.0.8/ext/unf_ext'
 Makefile:175: warning: overriding recipe for target 'clean'
-@‹~†:V:175: warning: ignoring old recipe for target 'clean'
+¿åy.¬U:175: warning: ignoring old recipe for target 'clean'
 Makefile:182: warning: overriding recipe for target 'distclean'
-@‹~†:V:182: warning: ignoring old recipe for target 'distclean'
+¿åy.¬U:182: warning: ignoring old recipe for target 'distclean'
 Makefile:190: warning: overriding recipe for target 'install-so'
-@‹~†:V:190: warning: ignoring old recipe for target 'install-so'
+¿åy.¬U:190: warning: ignoring old recipe for target 'install-so'
 Makefile:200: warning: overriding recipe for target 'pre-install-rb-default'
-@‹~†:V:200: warning: ignoring old recipe for target 'pre-install-rb-default'
+¿åy.¬U:200: warning: ignoring old recipe for target 'pre-install-rb-default'
 Makefile:202: warning: overriding recipe for target '.sitearchdir.time'
-@‹~†:V:202: warning: ignoring old recipe for target '.sitearchdir.time'
+¿åy.¬U:202: warning: ignoring old recipe for target '.sitearchdir.time'
 Makefile:212: warning: overriding recipe for target '.cc.o'
-@‹~†:V:212: warning: ignoring old recipe for target '.cc.o'
+¿åy.¬U:212: warning: ignoring old recipe for target '.cc.o'
 Makefile:216: warning: overriding recipe for target '.cc.S'
-@‹~†:V:216: warning: ignoring old recipe for target '.cc.S'
+¿åy.¬U:216: warning: ignoring old recipe for target '.cc.S'
 Makefile:220: warning: overriding recipe for target '.mm.o'
-@‹~†:V:220: warning: ignoring old recipe for target '.mm.o'
+¿åy.¬U:220: warning: ignoring old recipe for target '.mm.o'
 Makefile:224: warning: overriding recipe for target '.mm.S'
-@‹~†:V:224: warning: ignoring old recipe for target '.mm.S'
+¿åy.¬U:224: warning: ignoring old recipe for target '.mm.S'
 Makefile:228: warning: overriding recipe for target '.cxx.o'
-@‹~†:V:228: warning: ignoring old recipe for target '.cxx.o'
+¿åy.¬U:228: warning: ignoring old recipe for target '.cxx.o'
 Makefile:232: warning: overriding recipe for target '.cxx.S'
-@‹~†:V:232: warning: ignoring old recipe for target '.cxx.S'
+¿åy.¬U:232: warning: ignoring old recipe for target '.cxx.S'
 Makefile:236: warning: overriding recipe for target '.cpp.o'
-@‹~†:V:236: warning: ignoring old recipe for target '.cpp.o'
+¿åy.¬U:236: warning: ignoring old recipe for target '.cpp.o'
 Makefile:240: warning: overriding recipe for target '.cpp.S'
-@‹~†:V:240: warning: ignoring old recipe for target '.cpp.S'
+¿åy.¬U:240: warning: ignoring old recipe for target '.cpp.S'
 Makefile:244: warning: overriding recipe for target '.c.o'
-@‹~†:V:244: warning: ignoring old recipe for target '.c.o'
+¿åy.¬U:244: warning: ignoring old recipe for target '.c.o'
 Makefile:248: warning: overriding recipe for target '.c.S'
-@‹~†:V:248: warning: ignoring old recipe for target '.c.S'
+¿åy.¬U:248: warning: ignoring old recipe for target '.c.S'
 Makefile:252: warning: overriding recipe for target '.m.o'
-@‹~†:V:252: warning: ignoring old recipe for target '.m.o'
+¿åy.¬U:252: warning: ignoring old recipe for target '.m.o'
 Makefile:256: warning: overriding recipe for target '.m.S'
-@‹~†:V:256: warning: ignoring old recipe for target '.m.S'
+¿åy.¬U:256: warning: ignoring old recipe for target '.m.S'
 Makefile:260: warning: overriding recipe for target 'unf_ext.so'
-@‹~†:V:260: warning: ignoring old recipe for target 'unf_ext.so'
+¿åy.¬U:260: warning: ignoring old recipe for target 'unf_ext.so'
 compiling unf.cc
 linking shared-object unf_ext.so
 make[1]: Leaving directory '/home/runner/work/visualisering/visualisering/.vendor/bundle/ruby/2.7.0/gems/unf_ext-0.0.8/ext/unf_ext'
@@ -91,40 +91,40 @@ current directory: /home/runner/work/visualisering/visualisering/.vendor/bundle/
 make "DESTDIR=" install
 make[1]: Entering directory '/home/runner/work/visualisering/visualisering/.vendor/bundle/ruby/2.7.0/gems/unf_ext-0.0.8/ext/unf_ext'
 Makefile:175: warning: overriding recipe for target 'clean'
-@Lâj%V:175: warning: ignoring old recipe for target 'clean'
+¿L)ùU:175: warning: ignoring old recipe for target 'clean'
 Makefile:182: warning: overriding recipe for target 'distclean'
-@Lâj%V:182: warning: ignoring old recipe for target 'distclean'
+¿L)ùU:182: warning: ignoring old recipe for target 'distclean'
 Makefile:190: warning: overriding recipe for target 'install-so'
-@Lâj%V:190: warning: ignoring old recipe for target 'install-so'
+¿L)ùU:190: warning: ignoring old recipe for target 'install-so'
 Makefile:200: warning: overriding recipe for target 'pre-install-rb-default'
-@Lâj%V:200: warning: ignoring old recipe for target 'pre-install-rb-default'
+¿L)ùU:200: warning: ignoring old recipe for target 'pre-install-rb-default'
 Makefile:202: warning: overriding recipe for target '.sitearchdir.time'
-@Lâj%V:202: warning: ignoring old recipe for target '.sitearchdir.time'
+¿L)ùU:202: warning: ignoring old recipe for target '.sitearchdir.time'
 Makefile:212: warning: overriding recipe for target '.cc.o'
-@Lâj%V:212: warning: ignoring old recipe for target '.cc.o'
+¿L)ùU:212: warning: ignoring old recipe for target '.cc.o'
 Makefile:216: warning: overriding recipe for target '.cc.S'
-@Lâj%V:216: warning: ignoring old recipe for target '.cc.S'
+¿L)ùU:216: warning: ignoring old recipe for target '.cc.S'
 Makefile:220: warning: overriding recipe for target '.mm.o'
-@Lâj%V:220: warning: ignoring old recipe for target '.mm.o'
+¿L)ùU:220: warning: ignoring old recipe for target '.mm.o'
 Makefile:224: warning: overriding recipe for target '.mm.S'
-@Lâj%V:224: warning: ignoring old recipe for target '.mm.S'
+¿L)ùU:224: warning: ignoring old recipe for target '.mm.S'
 Makefile:228: warning: overriding recipe for target '.cxx.o'
-@Lâj%V:228: warning: ignoring old recipe for target '.cxx.o'
+¿L)ùU:228: warning: ignoring old recipe for target '.cxx.o'
 Makefile:232: warning: overriding recipe for target '.cxx.S'
-@Lâj%V:232: warning: ignoring old recipe for target '.cxx.S'
+¿L)ùU:232: warning: ignoring old recipe for target '.cxx.S'
 Makefile:236: warning: overriding recipe for target '.cpp.o'
-@Lâj%V:236: warning: ignoring old recipe for target '.cpp.o'
+¿L)ùU:236: warning: ignoring old recipe for target '.cpp.o'
 Makefile:240: warning: overriding recipe for target '.cpp.S'
-@Lâj%V:240: warning: ignoring old recipe for target '.cpp.S'
+¿L)ùU:240: warning: ignoring old recipe for target '.cpp.S'
 Makefile:244: warning: overriding recipe for target '.c.o'
-@Lâj%V:244: warning: ignoring old recipe for target '.c.o'
+¿L)ùU:244: warning: ignoring old recipe for target '.c.o'
 Makefile:248: warning: overriding recipe for target '.c.S'
-@Lâj%V:248: warning: ignoring old recipe for target '.c.S'
+¿L)ùU:248: warning: ignoring old recipe for target '.c.S'
 Makefile:252: warning: overriding recipe for target '.m.o'
-@Lâj%V:252: warning: ignoring old recipe for target '.m.o'
+¿L)ùU:252: warning: ignoring old recipe for target '.m.o'
 Makefile:256: warning: overriding recipe for target '.m.S'
-@Lâj%V:256: warning: ignoring old recipe for target '.m.S'
+¿L)ùU:256: warning: ignoring old recipe for target '.m.S'
 Makefile:260: warning: overriding recipe for target 'unf_ext.so'
-@Lâj%V:260: warning: ignoring old recipe for target 'unf_ext.so'
-/usr/bin/install -c -m 0755 unf_ext.so ./.gem.20210923-12492-qocro6
+¿L)ùU:260: warning: ignoring old recipe for target 'unf_ext.so'
+/usr/bin/install -c -m 0755 unf_ext.so ./.gem.20210923-12500-ft4zu8
 make[1]: Leaving directory '/home/runner/work/visualisering/visualisering/.vendor/bundle/ruby/2.7.0/gems/unf_ext-0.0.8/ext/unf_ext'
