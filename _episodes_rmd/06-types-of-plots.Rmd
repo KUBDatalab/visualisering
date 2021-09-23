@@ -294,18 +294,44 @@ a + b + c
 # Good for showing evolution
 
 ## line plot
+```{r lineplot,  purl = FALSE, eval = TRUE, echo = FALSE }
+xValue <- 1:10
+yValue <- cumsum(rnorm(10))
+data <- data.frame(xValue,yValue)
+
+# Plot
+ggplot(data, aes(x=xValue, y=yValue)) +
+  geom_line()
+```
 
 ## Area
+```{r areaplot,  purl = FALSE, eval = TRUE, echo = FALSE }
+xValue <- 1:50
+yValue <- cumsum(rnorm(50))
+data <- data.frame(xValue,yValue)
+
+# Plot
+ggplot(data, aes(x=xValue, y=yValue)) +
+  geom_area()
+```
 
 ## Stacked area
 
 ## Streamchart
+
+```{r streamgraph,  purl = FALSE, eval = TRUE, echo = FALSE }
+
+```
+
 
 ## time series
 
 # Good for geograpical data
 
 ## Map
+
+
+
 
 ## Choropleth
 

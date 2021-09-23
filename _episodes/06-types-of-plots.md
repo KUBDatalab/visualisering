@@ -207,18 +207,26 @@ a + b + c
 # Good for showing evolution
 
 ## line plot
+<img src="../fig/rmd-05-lineplot-1.png" title="plot of chunk lineplot" alt="plot of chunk lineplot" width="612" style="display: block; margin: auto;" />
 
 ## Area
+<img src="../fig/rmd-05-areaplot-1.png" title="plot of chunk areaplot" alt="plot of chunk areaplot" width="612" style="display: block; margin: auto;" />
 
 ## Stacked area
 
 ## Streamchart
+
+
+
 
 ## time series
 
 # Good for geograpical data
 
 ## Map
+
+
+
 
 ## Choropleth
 
