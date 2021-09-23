@@ -16,6 +16,16 @@ knitr::opts_chunk$set(fig.width = 3,
 
 ```
 
+
+~~~
+print(first_name, 'is', age, 'years old')
+~~~
+{: .language-python}
+~~~
+Ahmed is 42 years old
+~~~
+{: .output}
+
 This document contains all of the functions that we have covered thus far in the
 course. It will be updated every week, after we've added new skills. Each 
 function is presented alongside an example of how it is used. 
@@ -32,8 +42,11 @@ All of the examples below are in the context of the Palmer Penguins, found
 library(tidyverse)
 library(palmerpenguins)
 ```
-
-
+~~~
+age = age + 3
+print('Age in three years:', age)
+~~~
+{: .language-python}
 
 ## Inspecting Data
 
