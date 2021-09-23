@@ -136,7 +136,8 @@ _episodes/%.md: _episodes_rmd/%.Rmd install-rmd-deps
 	@mkdir -p _episodes 
 	@bin/knit_lessons.sh $< $@
 
-_extras/%.md: _extras_rmd/%.Rmd
+_extras/%.md: _extras_rmd/%.Rmd install-rmd-deps
+	@mkdir -p _extras 
 	@bin/knit_extras.sh $< $@
 
 ## * lesson-check     : validate lesson Markdown
