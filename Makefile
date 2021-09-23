@@ -1,4 +1,7 @@
 ## ========================================
+## En del justeringer er sket for at få extras rmd filer outputtet korrekt.
+## https://github.com/data-carpentry-for-agriculture/trial-lesson/blob/gh-pages/bin/generate_md_extras.R
+## er stedet jeg har søgt inspiration
 ## Commands for both workshop and lesson websites.
 
 # Settings
