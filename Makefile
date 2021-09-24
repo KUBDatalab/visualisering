@@ -15,7 +15,8 @@ DST=_site
 
 ## commands         : show all commands.
 commands :
-  @grep -h -E '^##' ${MAKEFILES} | sed -e 's/## //g'
+#  @grep -h -E '^##' ${MAKEFILES} | sed -e 's/## //g'
+	@sed -n -e '/^##/s|^##[[:space:]]*||p' $(MAKEFILE_LIST)
 
 ## docker-serve     : use docker to build the site
 docker-serve :
