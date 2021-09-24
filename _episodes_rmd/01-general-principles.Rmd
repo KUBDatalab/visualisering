@@ -18,7 +18,9 @@ source: Rmd
 source("../bin/chunk-options.R")
 knitr_fig_path("01-")
 source("../bin/download_data.R")
+library(tidyverse)
 library(nycflights13)
+
 ```
 
 Først og fremmest - hvem er din målgruppe, hvad er det du vil vise? Hvad er 
