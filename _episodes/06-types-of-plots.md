@@ -35,17 +35,17 @@ mpg %>%
 ~~~
 {: .language-r}
 
-<img src="../fig/rmd-05-violin-1.png" title="plot of chunk violin" alt="plot of chunk violin" width="612" style="display: block; margin: auto;" />
+<img src="../fig/rmd-05-violin-1.png" alt="plot of chunk violin" width="612" style="display: block; margin: auto;" />
 
 
 ## density
 
 ~~~
-Warning: Removed 32 rows containing non-finite values (stat_density).
+Warning: Removed 32 rows containing non-finite values (`stat_density()`).
 ~~~
 {: .warning}
 
-<img src="../fig/rmd-05-density-1.png" title="plot of chunk density" alt="plot of chunk density" width="612" style="display: block; margin: auto;" />
+<img src="../fig/rmd-05-density-1.png" alt="plot of chunk density" width="612" style="display: block; margin: auto;" />
 
 ## Histogram
 
@@ -55,15 +55,23 @@ Warning: Removed 32 rows containing non-finite values (stat_density).
 ~~~
 {: .output}
 
-<img src="../fig/rmd-05-histogram-1.png" title="plot of chunk histogram" alt="plot of chunk histogram" width="612" style="display: block; margin: auto;" />
+<img src="../fig/rmd-05-histogram-1.png" alt="plot of chunk histogram" width="612" style="display: block; margin: auto;" />
 
 
 ## Boxplot
 
-<img src="../fig/rmd-05-boxplot-1.png" title="plot of chunk boxplot" alt="plot of chunk boxplot" width="612" style="display: block; margin: auto;" />
+<img src="../fig/rmd-05-boxplot-1.png" alt="plot of chunk boxplot" width="612" style="display: block; margin: auto;" />
 
 
 ## Ridgeline
+
+
+~~~
+Warning: The dot-dot notation (`..x..`) was deprecated in ggplot2 3.4.0.
+ℹ Please use `after_stat(x)` instead.
+~~~
+{: .warning}
+
 
 
 ~~~
@@ -71,17 +79,17 @@ Picking joint bandwidth of 3.37
 ~~~
 {: .output}
 
-<img src="../fig/rmd-05-ridgeline-1.png" title="plot of chunk ridgeline" alt="plot of chunk ridgeline" width="612" style="display: block; margin: auto;" />
+<img src="../fig/rmd-05-ridgeline-1.png" alt="plot of chunk ridgeline" width="612" style="display: block; margin: auto;" />
 
 
 # Gode til korrelationer
 
 ## scatter
 Basic scatterplot
-<img src="../fig/rmd-05-scatter-1.png" title="plot of chunk scatter" alt="plot of chunk scatter" width="612" style="display: block; margin: auto;" />
+<img src="../fig/rmd-05-scatter-1.png" alt="plot of chunk scatter" width="612" style="display: block; margin: auto;" />
 
 alternativ:
-<img src="../fig/rmd-05-unnamed-chunk-2-1.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" width="612" style="display: block; margin: auto;" />
+<img src="../fig/rmd-05-unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2" width="612" style="display: block; margin: auto;" />
 
 
 ## Heatmap
@@ -99,11 +107,11 @@ alternativ:
 ## Barplot
 
 
-<img src="../fig/rmd-05-unnamed-chunk-3-1.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" width="612" style="display: block; margin: auto;" />
+<img src="../fig/rmd-05-unnamed-chunk-3-1.png" alt="plot of chunk unnamed-chunk-3" width="612" style="display: block; margin: auto;" />
 If there is no natural order of the x-values, consider reordering 
 by size:
 
-<img src="../fig/rmd-05-unnamed-chunk-4-1.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" width="612" style="display: block; margin: auto;" />
+<img src="../fig/rmd-05-unnamed-chunk-4-1.png" alt="plot of chunk unnamed-chunk-4" width="612" style="display: block; margin: auto;" />
 
 
 ## Spider/radarplot
@@ -114,7 +122,7 @@ by size:
 
 ## Lollipop
 
-<img src="../fig/rmd-05-lollypop-1.png" title="plot of chunk lollypop" alt="plot of chunk lollypop" width="612" style="display: block; margin: auto;" />
+<img src="../fig/rmd-05-lollypop-1.png" alt="plot of chunk lollypop" width="612" style="display: block; margin: auto;" />
 Grundlæggende et barchart. 
 
 ## Cirkulær barplot
@@ -128,12 +136,12 @@ Grundlæggende et barchart.
 ## Doughnut
 
 Lige så meget skrammel som lagkagediagrammer.
-<img src="../fig/rmd-05-doughnut-1.png" title="plot of chunk doughnut" alt="plot of chunk doughnut" width="612" style="display: block; margin: auto;" />
+<img src="../fig/rmd-05-doughnut-1.png" alt="plot of chunk doughnut" width="612" style="display: block; margin: auto;" />
 
 
 ## Pie Chart
 
-<img src="../fig/rmd-05-pie-chart-1.png" title="plot of chunk pie-chart" alt="plot of chunk pie-chart" width="612" style="display: block; margin: auto;" />
+<img src="../fig/rmd-05-pie-chart-1.png" alt="plot of chunk pie-chart" width="612" style="display: block; margin: auto;" />
 
 Men pie-charts er noget skrammel
 
@@ -169,7 +177,7 @@ a + b + c
 ~~~
 {: .language-r}
 
-<img src="../fig/rmd-05-unnamed-chunk-5-1.png" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" width="612" style="display: block; margin: auto;" />
+<img src="../fig/rmd-05-unnamed-chunk-5-1.png" alt="plot of chunk unnamed-chunk-5" width="612" style="display: block; margin: auto;" />
 
 
 ~~~
@@ -197,7 +205,7 @@ a + b + c
 ~~~
 {: .language-r}
 
-<img src="../fig/rmd-05-unnamed-chunk-6-1.png" title="plot of chunk unnamed-chunk-6" alt="plot of chunk unnamed-chunk-6" width="612" style="display: block; margin: auto;" />
+<img src="../fig/rmd-05-unnamed-chunk-6-1.png" alt="plot of chunk unnamed-chunk-6" width="612" style="display: block; margin: auto;" />
 
 
 ## Dendrogram
@@ -207,10 +215,10 @@ a + b + c
 # Good for showing evolution
 
 ## line plot
-<img src="../fig/rmd-05-lineplot-1.png" title="plot of chunk lineplot" alt="plot of chunk lineplot" width="612" style="display: block; margin: auto;" />
+<img src="../fig/rmd-05-lineplot-1.png" alt="plot of chunk lineplot" width="612" style="display: block; margin: auto;" />
 
 ## Area
-<img src="../fig/rmd-05-areaplot-1.png" title="plot of chunk areaplot" alt="plot of chunk areaplot" width="612" style="display: block; margin: auto;" />
+<img src="../fig/rmd-05-areaplot-1.png" alt="plot of chunk areaplot" width="612" style="display: block; margin: auto;" />
 
 ## Stacked area
 

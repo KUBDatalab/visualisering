@@ -38,7 +38,7 @@ Her taler vi om akser, og deres betydning for visualiseringer
 skalering er ret vigtig. Nedenstående tre plots har nøjagtigt samme data. Hvordan 
 ser hældningerne ud på dem?
 
-<img src="../fig/rmd-02-unnamed-chunk-2-1.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" width="612" style="display: block; margin: auto;" />
+<img src="../fig/rmd-02-unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2" width="612" style="display: block; margin: auto;" />
 
 ## Truncation of axes ## 
 
@@ -57,6 +57,13 @@ interviews <- read_csv(
   na = "NULL")
 ~~~
 {: .language-r}
+
+
+
+~~~
+Error: '/home/runner/work/visualisering/visualisering/data/SAFI_clean.csv' does not exist.
+~~~
+{: .error}
 
 Den her beholder vi foreløbig, som eksempel på hvordan vi indsætter noter
 
@@ -106,16 +113,75 @@ Og den her beholder vi som eksempel på hvordan vi laver øvelser i det her syst
 > > ~~~
 > > ## 1.
 > > interviews_100 <- interviews[100, ]
+> > ~~~
+> > {: .language-r}
+> > 
+> > 
+> > 
+> > ~~~
+> > Error in eval(expr, envir, enclos): object 'interviews' not found
+> > ~~~
+> > {: .error}
+> > 
+> > 
+> > 
+> > ~~~
 > > ## 2.
 > > # Saving `n_rows` to improve readability and reduce duplication
 > > n_rows <- nrow(interviews)
+> > ~~~
+> > {: .language-r}
+> > 
+> > 
+> > 
+> > ~~~
+> > Error in nrow(interviews): object 'interviews' not found
+> > ~~~
+> > {: .error}
+> > 
+> > 
+> > 
+> > ~~~
 > > interviews_last <- interviews[n_rows, ]
+> > ~~~
+> > {: .language-r}
+> > 
+> > 
+> > 
+> > ~~~
+> > Error in eval(expr, envir, enclos): object 'interviews' not found
+> > ~~~
+> > {: .error}
+> > 
+> > 
+> > 
+> > ~~~
 > > ## 3.
 > > interviews_middle <- interviews[median(1:n_rows), ]
+> > ~~~
+> > {: .language-r}
+> > 
+> > 
+> > 
+> > ~~~
+> > Error in eval(expr, envir, enclos): object 'interviews' not found
+> > ~~~
+> > {: .error}
+> > 
+> > 
+> > 
+> > ~~~
 > > ## 4.
 > > interviews_head <- interviews[-(7:n_rows), ]
 > > ~~~
 > > {: .language-r}
+> > 
+> > 
+> > 
+> > ~~~
+> > Error in eval(expr, envir, enclos): object 'interviews' not found
+> > ~~~
+> > {: .error}
 > {: .solution}
 {: .challenge}
 
@@ -128,6 +194,13 @@ der er ryddet op i andre sider.
 library(lubridate)
 ~~~
 {: .language-r}
+
+
+
+~~~
+Loading required package: timechange
+~~~
+{: .output}
 
 
 
@@ -207,23 +280,8 @@ interviews
 
 
 ~~~
-# A tibble: 131 × 14
-   key_ID village interview_date      no_membrs years_liv respondent_wall… rooms
-    <dbl> <chr>   <dttm>                  <dbl>     <dbl> <chr>            <dbl>
- 1      1 God     2016-11-17 00:00:00         3         4 muddaub              1
- 2      1 God     2016-11-17 00:00:00         7         9 muddaub              1
- 3      3 God     2016-11-17 00:00:00        10        15 burntbricks          1
- 4      4 God     2016-11-17 00:00:00         7         6 burntbricks          1
- 5      5 God     2016-11-17 00:00:00         7        40 burntbricks          1
- 6      6 God     2016-11-17 00:00:00         3         3 muddaub              1
- 7      7 God     2016-11-17 00:00:00         6        38 muddaub              1
- 8      8 Chirod… 2016-11-16 00:00:00        12        70 burntbricks          3
- 9      9 Chirod… 2016-11-16 00:00:00         8         6 burntbricks          1
-10     10 Chirod… 2016-12-16 00:00:00        12        23 burntbricks          5
-# … with 121 more rows, and 7 more variables: memb_assoc <chr>,
-#   affect_conflicts <chr>, liv_count <dbl>, items_owned <chr>, no_meals <dbl>,
-#   months_lack_food <chr>, instanceID <chr>
+Error in eval(expr, envir, enclos): object 'interviews' not found
 ~~~
-{: .output}
+{: .error}
 
 {% include links.md %}
